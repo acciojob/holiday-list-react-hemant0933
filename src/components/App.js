@@ -38,7 +38,8 @@ const App = () => {
   return (
     <div id="main">
       <ol>
-        {filteredList.map((city, index) => (
+        { filteredList.length !== 0 &&
+          filteredList.map((city, index) => (
           <li key={`location + ${index+1}`}>{city.name}</li>
         ))}
       </ol>
